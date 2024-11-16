@@ -1,8 +1,14 @@
+import { Button, HStack } from '@chakra-ui/react';
+import { ColorModeIcon } from './components/ui/color-mode';
+
 function App() {
   return (
-    <>
-      <h1>Hello World</h1>
-    </>
+    <HStack padding="5">
+      <Button colorPalette="teal" size="md">
+        Click
+      </Button>
+      <ColorModeIcon />
+    </HStack>
   );
 }
 
