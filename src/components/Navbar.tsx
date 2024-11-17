@@ -15,7 +15,7 @@ const Navbar = () => {
   const { open, onOpen, onClose } = useDisclosure();
 
   return (
-    <HStack justifyContent="space-between" padding={4}>
+    <HStack justifyContent="space-between" >
       <Link href="/">
         <Text textStyle="2xl" fontWeight="bold" padding="1">
           Mauricio's Portfolio
