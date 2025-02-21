@@ -1,11 +1,4 @@
-import {
-  Box,
-  Button,
-  HStack,
-  Text,
-  Link,
-  Flex,
-} from '@chakra-ui/react';
+import { Box, Button, HStack, Text, Link, Flex } from '@chakra-ui/react';
 import { FaGithub, FaLaptop, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
