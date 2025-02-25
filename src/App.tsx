@@ -6,14 +6,17 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import StudyCase from './pages/StudyCase';
 import Footer from './components/Footer';
-import { Flex } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
+import { useColorModeValue } from './components/ui/color-mode';
 
 function App() {
+  const bgColor = useColorModeValue('gray.100', 'gray.900'); // light gray for light mode, darker gray for dark mode
+
   return (
-    <Flex minH="100vh" direction="column">
+    <Box minH="100vh" bg={bgColor} display="flex" flexDirection="column">
       <Router>
         <Navbar />
-        <Flex flex="1" direction="column">
+        <Box flex="1">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -21,10 +24,10 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/studyCase" element={<StudyCase />} />
           </Routes>
-        </Flex>
+        </Box>
         <Footer />
       </Router>
-    </Flex>
+    </Box>
   );
 }
 

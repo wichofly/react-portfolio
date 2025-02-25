@@ -29,19 +29,19 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/mauricio-erazo-/"
                 target="_blank"
               >
-                <FaLinkedin fontSize="1.8em" />
+                <FaLinkedin />
               </Link>
             </Button>
 
             <Button variant="ghost">
               <Link href="https://github.com/wichofly/" target="_blank">
-                <FaGithub fontSize="1.8em" />
+                <FaGithub />
               </Link>
             </Button>
 
             <Button variant="ghost">
               <Link href="/">
-                <FaLaptop fontSize="1.8em" />
+                <FaLaptop />
               </Link>
             </Button>
           </HStack>

@@ -6,11 +6,13 @@ import {
   Text,
   useDisclosure,
   VStack,
+  Image,
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { ColorModeButton, useColorMode } from './ui/color-mode';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import logoPic from '../assets/mauri-pic.jpeg';
 
 const Navbar = () => {
   const { open, onOpen, onClose } = useDisclosure();
@@ -19,9 +21,23 @@ const Navbar = () => {
   return (
     <HStack justifyContent="space-between" p="4">
       <Link to="/">
-        <Text fontSize="2xl" fontWeight="bold">
-          Mauricio's Portfolio
-        </Text>
+        <Flex
+          align="center"
+          gap="2"
+          _hover={{ scale: '1.1', color: 'teal.500' }}
+          transition="scale 0.5s"
+        >
+          <Image
+            src={logoPic}
+            boxSize="40px"
+            borderRadius="full"
+            fit="cover"
+            alt="Mauricio Erazo"
+          />
+          <Text fontSize="xl" fontWeight="bold">
+            Mauricio Erazo
+          </Text>
+        </Flex>
       </Link>
 
       <Flex align="center">
@@ -33,10 +49,26 @@ const Navbar = () => {
           color="teal.500"
           display={{ base: 'none', md: 'flex' }}
         >
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/">
+            <Text _hover={{ color: 'teal.400' }} transition="0.2s ease-in-out">
+              Home
+            </Text>
+          </Link>
+          <Link to="/about">
+            <Text _hover={{ color: 'teal.400' }} transition="0.2s ease-in-out">
+              About
+            </Text>
+          </Link>
+          <Link to="/projects">
+            <Text _hover={{ color: 'teal.400' }} transition="0.2s ease-in-out">
+              Projects
+            </Text>
+          </Link>
+          <Link to="/contact">
+            <Text _hover={{ color: 'teal.400' }} transition="0.2s ease-in-out">
+              Contact
+            </Text>
+          </Link>
         </HStack>
 
         {/* Mobile Menu Button */}
