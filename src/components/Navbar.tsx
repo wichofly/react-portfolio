@@ -9,7 +9,11 @@ import {
   Image,
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
-import { ColorModeButton, useColorMode } from './ui/color-mode';
+import {
+  ColorModeButton,
+  useColorMode,
+  useColorModeValue,
+} from './ui/color-mode';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import logoPic from '../assets/mauri-pic.jpeg';
@@ -18,8 +22,10 @@ const Navbar = () => {
   const { open, onOpen, onClose } = useDisclosure();
   const { colorMode } = useColorMode();
 
+  const color = useColorModeValue('gray.600', 'teal.500');
+
   return (
-    <HStack justifyContent="space-between" p="4">
+    <HStack justifyContent="space-between" p="4" color={color}>
       <Link to="/">
         <Flex
           align="center"
@@ -37,7 +43,6 @@ const Navbar = () => {
           <Text
             fontSize="xl"
             fontWeight="bold"
-            color="teal.500"
             _hover={{ color: 'orange.400' }}
             transition="0.3s ease-in-out"
           >
@@ -52,7 +57,6 @@ const Navbar = () => {
           gap="8"
           fontSize="xl"
           fontWeight="medium"
-          color="teal.500"
           display={{ base: 'none', md: 'flex' }}
         >
           <Link to="/">
@@ -138,7 +142,6 @@ const Navbar = () => {
               zIndex="20"
               p={4}
               borderRadius="md"
-              color="teal.500"
               mt={5}
             >
               <VStack align="start" gap="4">
