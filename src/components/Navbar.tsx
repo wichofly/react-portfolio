@@ -24,7 +24,7 @@ const Navbar = () => {
         <Flex
           align="center"
           gap="2"
-          _hover={{ scale: '1.1', color: 'teal.500' }}
+          _hover={{ scale: '1.1' }}
           transition="scale 0.5s"
         >
           <Image
@@ -34,7 +34,13 @@ const Navbar = () => {
             fit="cover"
             alt="Mauricio Erazo"
           />
-          <Text fontSize="xl" fontWeight="bold">
+          <Text
+            fontSize="xl"
+            fontWeight="bold"
+            color="teal.500"
+            _hover={{ color: 'orange.400' }}
+            transition="0.3s ease-in-out"
+          >
             Mauricio Erazo
           </Text>
         </Flex>
@@ -50,22 +56,34 @@ const Navbar = () => {
           display={{ base: 'none', md: 'flex' }}
         >
           <Link to="/">
-            <Text _hover={{ color: 'teal.400' }} transition="0.2s ease-in-out">
+            <Text
+              _hover={{ color: 'orange.400' }}
+              transition="0.2s ease-in-out"
+            >
               Home
             </Text>
           </Link>
           <Link to="/about">
-            <Text _hover={{ color: 'teal.400' }} transition="0.2s ease-in-out">
+            <Text
+              _hover={{ color: 'orange.400' }}
+              transition="0.2s ease-in-out"
+            >
               About
             </Text>
           </Link>
           <Link to="/projects">
-            <Text _hover={{ color: 'teal.400' }} transition="0.2s ease-in-out">
+            <Text
+              _hover={{ color: 'orange.400' }}
+              transition="0.2s ease-in-out"
+            >
               Projects
             </Text>
           </Link>
           <Link to="/contact">
-            <Text _hover={{ color: 'teal.400' }} transition="0.2s ease-in-out">
+            <Text
+              _hover={{ color: 'orange.400' }}
+              transition="0.2s ease-in-out"
+            >
               Contact
             </Text>
           </Link>
@@ -125,16 +143,36 @@ const Navbar = () => {
             >
               <VStack align="start" gap="4">
                 <Link to="/" onClick={onClose}>
-                  Home
+                  <Text
+                    _hover={{ color: 'orange.400' }}
+                    transition="0.2s ease-in-out"
+                  >
+                    Home
+                  </Text>
                 </Link>
                 <Link to="/about" onClick={onClose}>
-                  About
+                  <Text
+                    _hover={{ color: 'orange.400' }}
+                    transition="0.2s ease-in-out"
+                  >
+                    About
+                  </Text>
                 </Link>
                 <Link to="/projects" onClick={onClose}>
-                  Projects
+                  <Text
+                    _hover={{ color: 'orange.400' }}
+                    transition="0.2s ease-in-out"
+                  >
+                    Projects
+                  </Text>
                 </Link>
                 <Link to="/contact" onClick={onClose}>
-                  Contact
+                  <Text
+                    _hover={{ color: 'orange.400' }}
+                    transition="0.2s ease-in-out"
+                  >
+                    Contact
+                  </Text>
                 </Link>
               </VStack>
             </Box>
