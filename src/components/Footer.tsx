@@ -1,4 +1,4 @@
-import { Box, Button, HStack, Text, Link, Flex } from '@chakra-ui/react';
+import { Box, HStack, Text, Link, Flex, IconButton } from '@chakra-ui/react';
 import { FaGithub, FaLaptop, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
@@ -24,26 +24,26 @@ const Footer = () => {
         <Box textAlign="center">
           <Text as="b">Find me on</Text>
           <HStack my="2">
-            <Button variant="ghost">
+            <IconButton variant="ghost">
               <Link
                 href="https://www.linkedin.com/in/mauricio-erazo-/"
                 target="_blank"
               >
                 <FaLinkedin />
               </Link>
-            </Button>
+            </IconButton>
 
-            <Button variant="ghost">
+            <IconButton variant="ghost">
               <Link href="https://github.com/wichofly/" target="_blank">
                 <FaGithub />
               </Link>
-            </Button>
+            </IconButton>
 
-            <Button variant="ghost">
+            <IconButton variant="ghost">
               <Link href="/">
                 <FaLaptop />
               </Link>
-            </Button>
+            </IconButton>
           </HStack>
         </Box>
       </Flex>
