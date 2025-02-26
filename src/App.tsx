@@ -11,12 +11,12 @@ import { useColorModeValue } from './components/ui/color-mode';
 
 function App() {
   const color = useColorModeValue('gray.800', 'gray.400');
-  
+
   return (
     <Flex minH="100vh" display="flex" flexDirection="column">
       <Router>
         <Navbar />
-        <Box flex="1" color={color}>
+        <Box flex="1" color={color} p="4">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
