@@ -1,9 +1,18 @@
 import { LinkButton } from '@/components/ui/link-button';
-import { Box, HStack, Text } from '@chakra-ui/react';
+import { Box, HStack, Show, Text, Image } from '@chakra-ui/react';
+
+import coffee from '../assets/coffee.png';
 
 const Home = () => {
   return (
-    <Box textAlign="center" mt="4">
+    <Box
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      justifyContent="center"
+      mt="4"
+      textAlign="center"
+    >
       <Text fontSize="4xl" fontWeight="semibold">
         Hi Everyone, I am Mauricio Erazo.
       </Text>
@@ -14,13 +23,8 @@ const Home = () => {
         I have experience in building web applications using modern technologies
         like React, TypeScript, Node.js, and more.
       </Text>
-      <HStack
-        gap="4"
-        my="6"
-        display="flex"
-        flexDirection={{ base: 'column', md: 'row' }}
-        justifyContent={'center'}
-      >
+
+      <HStack gap="4" my="6" flexDirection={{ base: 'column', md: 'row' }}>
         <LinkButton colorPalette="teal" variant="outline" href="/projects">
           View Projects
         </LinkButton>
@@ -29,6 +33,14 @@ const Home = () => {
           Contact Me
         </LinkButton>
       </HStack>
+
+      <Show when="md">
+        <Image
+          src={coffee}
+          alt="Coffee"
+          boxSize={{ base: '280px', md: '380px' }}
+        />
+      </Show>
     </Box>
   );
 };
