@@ -1,6 +1,15 @@
-import { Box, HStack, Text, Link, Flex, IconButton } from '@chakra-ui/react';
+import {
+  Box,
+  HStack,
+  Text,
+  Link,
+  Flex,
+  IconButton,
+  Icon,
+} from '@chakra-ui/react';
 import { FaGithub, FaLaptop, FaLinkedin } from 'react-icons/fa';
 import { useColorModeValue } from './ui/color-mode';
+import { LinkButton } from './ui/link-button';
 
 const Footer = () => {
   const footerYears = new Date().getFullYear();
@@ -28,26 +37,31 @@ const Footer = () => {
         <Box textAlign="center">
           <Text as="b">Find me on</Text>
           <HStack my="2">
-            <IconButton variant="ghost">
-              <Link
-                href="https://www.linkedin.com/in/mauricio-erazo-/"
-                target="_blank"
-              >
+            <LinkButton
+              variant="ghost"
+              href="https://www.linkedin.com/in/mauricio-erazo-/"
+              target="_blank"
+            >
+              <Icon fontSize="3xl">
                 <FaLinkedin />
-              </Link>
-            </IconButton>
+              </Icon>
+            </LinkButton>
 
-            <IconButton variant="ghost">
-              <Link href="https://github.com/wichofly/" target="_blank">
+            <LinkButton
+              variant="ghost"
+              href="https://github.com/wichofly/"
+              target="_blank"
+            >
+              <Icon fontSize="3xl">
                 <FaGithub />
-              </Link>
-            </IconButton>
+              </Icon>
+            </LinkButton>
 
-            <IconButton variant="ghost">
-              <Link href="/">
+            <LinkButton variant="ghost" href="/">
+              <Icon fontSize="3xl">
                 <FaLaptop />
-              </Link>
-            </IconButton>
+              </Icon>
+            </LinkButton>
           </HStack>
         </Box>
       </Flex>
