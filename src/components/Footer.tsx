@@ -1,12 +1,4 @@
-import {
-  Box,
-  HStack,
-  Text,
-  Link,
-  Flex,
-  IconButton,
-  Icon,
-} from '@chakra-ui/react';
+import { Box, Flex, HStack, Icon, Text } from '@chakra-ui/react';
 import { FaGithub, FaLaptop, FaLinkedin } from 'react-icons/fa';
 import { useColorModeValue } from './ui/color-mode';
 import { LinkButton } from './ui/link-button';
