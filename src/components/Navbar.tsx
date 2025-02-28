@@ -21,8 +21,7 @@ import logoPic from '../assets/mauri-pic.jpeg';
 const Navbar = () => {
   const { open, onOpen, onClose } = useDisclosure();
   const { colorMode } = useColorMode();
-
-  const color = useColorModeValue('gray.600', 'teal.500');
+  const color = useColorModeValue('gray.800', 'gray.400');
 
   return (
     <HStack justifyContent="space-between" p="4" color={color}>
@@ -43,7 +42,7 @@ const Navbar = () => {
           <Text
             fontSize="xl"
             fontWeight="bold"
-            _hover={{ color: 'orange.400' }}
+            _hover={{ color: 'teal.600' }}
             transition="0.3s ease-in-out"
           >
             Mauricio Erazo
@@ -60,34 +59,22 @@ const Navbar = () => {
           display={{ base: 'none', md: 'flex' }}
         >
           <Link to="/">
-            <Text
-              _hover={{ color: 'orange.400' }}
-              transition="0.2s ease-in-out"
-            >
+            <Text _hover={{ color: 'teal.600' }} transition="0.2s ease-in-out">
               Home
             </Text>
           </Link>
           <Link to="/about">
-            <Text
-              _hover={{ color: 'orange.400' }}
-              transition="0.2s ease-in-out"
-            >
+            <Text _hover={{ color: 'teal.600' }} transition="0.2s ease-in-out">
               About
             </Text>
           </Link>
           <Link to="/projects">
-            <Text
-              _hover={{ color: 'orange.400' }}
-              transition="0.2s ease-in-out"
-            >
+            <Text _hover={{ color: 'teal.600' }} transition="0.2s ease-in-out">
               Projects
             </Text>
           </Link>
           <Link to="/contact">
-            <Text
-              _hover={{ color: 'orange.400' }}
-              transition="0.2s ease-in-out"
-            >
+            <Text _hover={{ color: 'teal.600' }} transition="0.2s ease-in-out">
               Contact
             </Text>
           </Link>
@@ -147,7 +134,8 @@ const Navbar = () => {
               <VStack align="start" gap="4">
                 <Link to="/" onClick={onClose}>
                   <Text
-                    _hover={{ color: 'orange.400' }}
+                    fontWeight="semibold"
+                    _hover={{ color: 'teal.600', fontWeight: 'semibold' }}
                     transition="0.2s ease-in-out"
                   >
                     Home
@@ -155,7 +143,8 @@ const Navbar = () => {
                 </Link>
                 <Link to="/about" onClick={onClose}>
                   <Text
-                    _hover={{ color: 'orange.400' }}
+                    fontWeight="semibold"
+                    _hover={{ color: 'teal.600', fontWeight: 'semibold' }}
                     transition="0.2s ease-in-out"
                   >
                     About
@@ -163,7 +152,8 @@ const Navbar = () => {
                 </Link>
                 <Link to="/projects" onClick={onClose}>
                   <Text
-                    _hover={{ color: 'orange.400' }}
+                    fontWeight="semibold"
+                    _hover={{ color: 'teal.600', fontWeight: 'semibold' }}
                     transition="0.2s ease-in-out"
                   >
                     Projects
@@ -171,7 +161,8 @@ const Navbar = () => {
                 </Link>
                 <Link to="/contact" onClick={onClose}>
                   <Text
-                    _hover={{ color: 'orange.400' }}
+                    fontWeight="semibold"
+                    _hover={{ color: 'teal.600', fontWeight: 'semibold' }}
                     transition="0.2s ease-in-out"
                   >
                     Contact

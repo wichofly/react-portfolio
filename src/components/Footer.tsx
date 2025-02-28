@@ -4,7 +4,7 @@ import { useColorModeValue } from './ui/color-mode';
 
 const Footer = () => {
   const footerYears = new Date().getFullYear();
-  const color = useColorModeValue('gray.600', 'teal.500');
+  const color = useColorModeValue('gray.600', 'gray.400');
 
   return (
     <Box

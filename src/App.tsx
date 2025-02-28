@@ -15,7 +15,7 @@ function App() {
   return (
     <Flex minH="100vh" display="flex" flexDirection="column">
       <Router>
-        <Navbar />
+        <Navbar  />
         <Box flex="1" color={color} p="4">
           <Routes>
             <Route path="/" element={<Home />} />
