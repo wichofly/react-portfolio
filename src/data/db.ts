@@ -13,7 +13,7 @@ export const projects: Project[] = [
     name: 'Pokemon App',
     image: pokemonImg,
     description:
-      'This is a Good App using JavaScript to show pokemon you are interested in.',
+      'A dynamic web application built with HTML, CSS, and JavaScript that fetches data from an external API. Users can browse the first 151 Pokémon, and clicking on a name opens a modal displaying the Pokémon’s image, type, height, weight, and abilities. The app utilizes API calls to provide real-time information and enhances user interaction with a sleek, responsive design.',
     github: 'https://github.com/wichofly/cryptoMoney-app',
     deploy: 'https://crypto-app-flax-ten.vercel.app/',
   },
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     name: 'Movie API',
     image: movieAPI,
     description:
-      'Interact with HTTP request and responses. The API created is able to interact with and respond to data request about movies or users, returning the requested data to the client.',
+      'A RESTful API developed with Node.js, Express, and MongoDB to manage movie and user data. This backend service allows users to register, log in, and manage their movie favorites. It interacts with a non-relational MongoDB database via Mongoose, ensuring efficient data retrieval and security. Designed for scalability, the API includes full CRUD operations and authentication features.',
     github: 'https://github.com/wichofly/movie-api',
     deploy: 'https://wichoflix.onrender.com/documentation',
   },
@@ -31,7 +31,7 @@ export const projects: Project[] = [
     name: 'My Flix',
     image: myFlix,
     description:
-      'In this project, I created the client-side using React from my movie-api database. In it, you can register as a user and navigate through the app. You can add movies to your favorites list as well as remove them, search for a movie and update your user.',
+      'A full-stack movie application built using the MERN (MongoDB, Express, React, Node.js) stack. This app provides a seamless user experience where users can sign up, log in, search for movies, add/remove favorites, and update their profile. It integrates with the Movie API backend, ensuring smooth data flow between the client and server.',
     github: 'https://github.com/wichofly/myFlix-client',
     deploy: 'https://wichoflix-client-react.netlify.app/',
   },
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     name: 'Video Games',
     image: videoGames,
     description:
-      'VideoGames-App is a web application designed to help users discover or see old video games.',
+      'A modern gaming discovery app built with React, TypeScript, and Chakra UI. It fetches and displays data on various video games, allowing users to explore both trending and classic games. Features include genre filtering, platform selection, and detailed game information. The responsive UI ensures a great experience across all devices.',
     github: 'https://github.com/wichofly/videoGames-app',
     deploy: 'https://video-games-app-fawn.vercel.app/',
   },
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     name: 'Crypto Currency',
     image: crypto,
     description:
-      'This project is to provide an easy-to-use cryptocurrency that fetches real-time its prices based on user selection.',
+      'A cryptocurrency price tracker built with React and the CoinDesk API. This app provides real-time price updates based on user-selected cryptocurrencies. It features a clean UI, interactive charts, and a responsive design, making it an ideal tool for crypto enthusiasts to stay updated with market trends.',
     github: 'https://github.com/wichofly/cryptoMoney-app',
     deploy: 'https://crypto-app-flax-ten.vercel.app/',
   },
@@ -58,7 +58,7 @@ export const projects: Project[] = [
     name: 'Veterinary Patients',
     image: vet,
     description:
-      'This project is a Veterinary Patient App where users can add, edit, view, and delete patient information. It is built using React and various modern tools for state management, form handling, and notifications.',
+      'A veterinary patient management system built with React, featuring full CRUD operations. Users can add, edit, view, and delete patient records in an intuitive interface. The app incorporates local storage for persistent data and offers a smooth user experience for veterinary clinics or pet owners.',
     github: 'https://github.com/wichofly/veterinaryPatients-app',
     deploy: 'https://crypto-app-flax-ten.vercel.app/',
   },
