@@ -12,6 +12,7 @@ import {
 import { IconType } from 'react-icons';
 
 import {
+  FaBootstrap,
   FaCss3Alt,
   FaDatabase,
   FaHtml5,
@@ -19,19 +20,40 @@ import {
   FaNodeJs,
   FaReact,
 } from 'react-icons/fa';
-import { SiExpress, SiMongodb, SiTypescript } from 'react-icons/si';
+import { IoLogoVercel } from 'react-icons/io5';
+import { MdHttp } from 'react-icons/md';
+import { RiTailwindCssFill } from 'react-icons/ri';
+import {
+  SiChakraui,
+  SiExpress,
+  SiMongodb,
+  SiNetlify,
+  SiReactquery,
+  SiRedux,
+  SiTypescript,
+  SiZod,
+} from 'react-icons/si';
 
 const Projects = () => {
   const iconMap: { [key: string]: IconType } = {
     Html: FaHtml5,
     Css: FaCss3Alt,
     JS: FaJsSquare,
+    HTTP: MdHttp,
     NodeJS: FaNodeJs,
     Express: SiExpress,
     MongoDB: SiMongodb,
     DataBase: FaDatabase,
     React: FaReact,
+    ReactBootstrap: FaBootstrap,
+    Redux: SiRedux,
+    Netlify: SiNetlify,
     Typescript: SiTypescript,
+    ChakraUI: SiChakraui,
+    ReactQuery: SiReactquery,
+    Vercel: IoLogoVercel,
+    Zod: SiZod,
+    TailwindCss: RiTailwindCssFill,
   };
   return (
     <>
@@ -60,7 +82,7 @@ const Projects = () => {
             <Card.Body gap="2">
               <Card.Title>{project.name}</Card.Title>
               <Card.Description>{project.description}</Card.Description>
-              <HStack>
+              <HStack mt={4} justifyContent="center" color="teal.500">
                 {project.iconImages.map((index) => (
                   <Text key={index} as={iconMap[index]} boxSize="6" />
                 ))}
