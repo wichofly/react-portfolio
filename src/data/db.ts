@@ -50,16 +50,6 @@ export const projects: Project[] = [
   },
   {
     id: '5',
-    name: 'Crypto Currency',
-    image: crypto,
-    description:
-      'A cryptocurrency price tracker built with React and the CoinDesk API. This app provides real-time price updates based on user-selected cryptocurrencies. It features a clean UI, interactive charts, and a responsive design, making it an ideal tool for crypto enthusiasts to stay updated with market trends.',
-    github: 'https://github.com/wichofly/cryptoMoney-app',
-    deploy: 'https://crypto-app-flax-ten.vercel.app/',
-    iconImages: ['React', 'Typescript', 'Css', 'Zod', 'Vercel'],
-  },
-  {
-    id: '6',
     name: 'Veterinary Patients',
     image: vet,
     description:
@@ -67,5 +57,15 @@ export const projects: Project[] = [
     github: 'https://github.com/wichofly/veterinaryPatients-app',
     deploy: 'https://crypto-app-flax-ten.vercel.app/',
     iconImages: ['React', 'Typescript', 'TailwindCss', 'Vercel'],
+  },
+  {
+    id: '6',
+    name: 'Crypto Currency',
+    image: crypto,
+    description:
+      'A cryptocurrency price tracker built with React and the CoinDesk API. This app provides real-time price updates based on user-selected cryptocurrencies. It features a clean UI, interactive charts, and a responsive design, making it an ideal tool for crypto enthusiasts to stay updated with market trends.',
+    github: 'https://github.com/wichofly/cryptoMoney-app',
+    deploy: 'https://crypto-app-flax-ten.vercel.app/',
+    iconImages: ['React', 'Typescript', 'Css', 'Zod', 'Vercel'],
   },
 ];
