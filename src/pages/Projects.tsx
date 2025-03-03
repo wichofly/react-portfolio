@@ -1,60 +1,9 @@
+import ProjectIcons from '@/components/ProjectIcons';
 import { LinkButton } from '@/components/ui/link-button';
 import { projects } from '@/data/db';
-import {
-  Box,
-  Card,
-  Heading,
-  HStack,
-  Image,
-  SimpleGrid,
-  Text,
-} from '@chakra-ui/react';
-import { IconType } from 'react-icons';
-
-import {
-  FaBootstrap,
-  FaCss3Alt,
-  FaDatabase,
-  FaHtml5,
-  FaJsSquare,
-  FaNodeJs,
-  FaReact,
-} from 'react-icons/fa';
-import { IoLogoVercel } from 'react-icons/io5';
-import { MdHttp } from 'react-icons/md';
-import { RiTailwindCssFill } from 'react-icons/ri';
-import {
-  SiChakraui,
-  SiExpress,
-  SiMongodb,
-  SiNetlify,
-  SiReactquery,
-  SiRedux,
-  SiTypescript,
-  SiZod,
-} from 'react-icons/si';
+import { Box, Card, Heading, Image, SimpleGrid, Text } from '@chakra-ui/react';
 
 const Projects = () => {
-  const iconMap: { [key: string]: IconType } = {
-    Html: FaHtml5,
-    Css: FaCss3Alt,
-    JS: FaJsSquare,
-    HTTP: MdHttp,
-    NodeJS: FaNodeJs,
-    Express: SiExpress,
-    MongoDB: SiMongodb,
-    DataBase: FaDatabase,
-    React: FaReact,
-    ReactBootstrap: FaBootstrap,
-    Redux: SiRedux,
-    Netlify: SiNetlify,
-    Typescript: SiTypescript,
-    ChakraUI: SiChakraui,
-    ReactQuery: SiReactquery,
-    Vercel: IoLogoVercel,
-    Zod: SiZod,
-    TailwindCss: RiTailwindCssFill,
-  };
   return (
     <>
       <Box textAlign="center" mb="8">
@@ -82,11 +31,7 @@ const Projects = () => {
             <Card.Body gap="2">
               <Card.Title>{project.name}</Card.Title>
               <Card.Description>{project.description}</Card.Description>
-              <HStack mt={4} justifyContent="center" color="teal.500">
-                {project.iconImages.map((index) => (
-                  <Text key={index} as={iconMap[index]} boxSize="6" />
-                ))}
-              </HStack>
+              <ProjectIcons iconImages={project.iconImages} />
             </Card.Body>
             <Card.Footer justifyContent="center" gap="2">
               <LinkButton
