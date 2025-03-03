@@ -1,8 +1,38 @@
 import { LinkButton } from '@/components/ui/link-button';
 import { projects } from '@/data/db';
-import { Box, Card, Heading, Image, SimpleGrid, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Card,
+  Heading,
+  HStack,
+  Image,
+  SimpleGrid,
+  Text,
+} from '@chakra-ui/react';
+import { IconType } from 'react-icons';
+
+import {
+  FaCss3Alt,
+  FaDatabase,
+  FaHtml5,
+  FaJsSquare,
+  FaNodeJs,
+  FaReact,
+} from 'react-icons/fa';
+import { SiExpress, SiMongodb, SiTypescript } from 'react-icons/si';
 
 const Projects = () => {
+  const iconMap: { [key: string]: IconType } = {
+    Html: FaHtml5,
+    Css: FaCss3Alt,
+    JS: FaJsSquare,
+    NodeJS: FaNodeJs,
+    Express: SiExpress,
+    MongoDB: SiMongodb,
+    DataBase: FaDatabase,
+    React: FaReact,
+    Typescript: SiTypescript,
+  };
   return (
     <>
       <Box textAlign="center" mb="8">
@@ -30,6 +60,11 @@ const Projects = () => {
             <Card.Body gap="2">
               <Card.Title>{project.name}</Card.Title>
               <Card.Description>{project.description}</Card.Description>
+              <HStack>
+                {project.iconImages.map((index) => (
+                  <Text key={index} as={iconMap[index]} boxSize="6" />
+                ))}
+              </HStack>
             </Card.Body>
             <Card.Footer justifyContent="center" gap="2">
               <LinkButton
