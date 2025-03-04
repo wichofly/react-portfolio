@@ -1,5 +1,5 @@
 import { projects } from '@/data/db';
-import { Box, Heading, Image, Text } from '@chakra-ui/react';
+import { Box, Heading, Image, SimpleGrid, Text } from '@chakra-ui/react';
 import { useParams } from 'react-router-dom';
 
 const CaseStudy = () => {
@@ -12,13 +12,7 @@ const CaseStudy = () => {
   }
 
   return (
-    <Box
-      display="grid"
-      gridTemplateColumns="repeat(2, 1fr)"
-      gap={6}
-      mt="4"
-      columns={{ base: 1, md: 2 }}
-    >
+    <SimpleGrid columns={{ base: 1, md: 2 }} gap={6} mt="4">
       <Box>
         <Heading mb="4" size="2xl">
           {project.caseStudy.title}
@@ -28,7 +22,7 @@ const CaseStudy = () => {
         <Heading size="lg" mt={6}>
           Key Features:
         </Heading>
-        <Box display="flex" gap="4">
+        <Box display="flex" gap="4" flexWrap="wrap">
           {project.caseStudy.features.map((feature, index) => (
             <Text key={index} border="1.5px solid" p={1} rounded="md" mt="2">
               {feature}
@@ -39,7 +33,7 @@ const CaseStudy = () => {
         <Heading size="lg" mt={6}>
           Technologies Used:
         </Heading>
-        <Box display="flex" gap="4">
+        <Box display="flex" gap="4" flexWrap="wrap">
           {project.caseStudy.toolsUsed.map((tool, index) => (
             <Text key={index} border="1.5px solid" p={1} rounded="md" mt="2">
               {tool}
@@ -48,54 +42,18 @@ const CaseStudy = () => {
         </Box>
       </Box>
 
-      <Box columns={{ base: 1, md: 2 }} gap={4}>
+      <Box columns={{ base: 1, md: 2 }}>
         {project.caseStudy.images.map((img, index) => (
           <Image key={index} src={img} alt={project.name} py={2} />
         ))}
       </Box>
-    </Box>
+    </SimpleGrid>
   );
 };
 
 export default CaseStudy;
 
 /**
- * 
-
-
- */
-
-/**
- * return (
-    <Grid templateColumns="repeat(2, 1fr)" gap={4} mt="4">
-      <SimpleGrid colSpan={2}>
-        <Heading mb={4}>{project.caseStudy.title}</Heading>
-        <Text fontSize="lg">{project.caseStudy.overview}</Text>
-
-        <Heading size="md" mt={6}>
-          Technologies Used:
-        </Heading>
-        {project.caseStudy.toolsUsed.map((tool, index) => (
-          <Text key={index}>{tool}</Text>
-        ))}
-      </SimpleGrid>
-
-      <SimpleGrid
-        columns={{ base: 1, md: 2, lg: 3 }} // Responsive: 1 column (mobile), 2 columns (tablet), 3 columns (desktop)
-        gap={4} // ✅ Add spacing between images
-        mt={6}
-        colSpan={2}
-      >
-        {project.caseStudy.images.map((img, index) => (
-          <Image
-            key={index}
-            src={img}
-            alt={`${project.name} screenshot ${index + 1}`}
-            borderRadius="md"
-            boxShadow="lg" // ✅ Add shadow for better visibility
-            objectFit="cover" // ✅ Ensure images are fully displayed
-          />
-        ))}
-      </SimpleGrid>
-    </Grid>
+ * The flexWrap="wrap" property is added to ensure that the features and tools used are displayed properly on smaller screens.
+ 
  */
