@@ -6,7 +6,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-import StudyCase from './pages/StudyCase';
+import CaseStudy from './pages/CaseStudy';
+
 import { useColorModeValue } from './components/ui/color-mode';
 
 function App() {
@@ -15,14 +16,14 @@ function App() {
   return (
     <Flex minH="100vh" display="flex" flexDirection="column">
       <Router>
-        <Navbar  />
+        <Navbar />
         <Box flex="1" color={color} p="4">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/studyCase" element={<StudyCase />} />
+            <Route path="/case-study/:id" element={<CaseStudy />} />
           </Routes>
         </Box>
         <Footer />

@@ -50,6 +50,15 @@ const Projects = () => {
               >
                 Deploy
               </LinkButton>
+              {project.showCaseStudy && (
+                <LinkButton
+                  href={`/case-study/${project.id}`}
+                  variant="outline"
+                  colorPalette="teal"
+                >
+                  Case Study
+                </LinkButton>
+              )}
             </Card.Footer>
           </Card.Root>
         ))}
