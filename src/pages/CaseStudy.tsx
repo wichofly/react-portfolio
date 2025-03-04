@@ -1,5 +1,5 @@
 import { projects } from '@/data/db';
-import { Box, Grid, GridItem, Heading, Image, Text } from '@chakra-ui/react';
+import { Box, Heading, Image, Text } from '@chakra-ui/react';
 import { useParams } from 'react-router-dom';
 
 const CaseStudy = () => {
@@ -12,36 +12,48 @@ const CaseStudy = () => {
   }
 
   return (
-    <Grid templateColumns="repeat(4, 1fr)" gap={6} mt="4">
-      <GridItem colSpan={2}>
-        <Heading mb="4">{project.caseStudy.title}</Heading>
+    <Box
+      display="grid"
+      gridTemplateColumns="repeat(2, 1fr)"
+      gap={6}
+      mt="4"
+      columns={{ base: 1, md: 2 }}
+    >
+      <Box>
+        <Heading mb="4" size="2xl">
+          {project.caseStudy.title}
+        </Heading>
         <Text fontSize="xl">{project.caseStudy.overview}</Text>
 
-        <Heading size="md" mt={4}>
+        <Heading size="lg" mt={6}>
           Key Features:
         </Heading>
         <Box display="flex" gap="4">
           {project.caseStudy.features.map((feature, index) => (
-            <Text key={index}>{feature}</Text>
+            <Text key={index} border="1.5px solid" p={1} rounded="md" mt="2">
+              {feature}
+            </Text>
           ))}
         </Box>
 
-        <Heading size="md" mt={6}>
+        <Heading size="lg" mt={6}>
           Technologies Used:
         </Heading>
         <Box display="flex" gap="4">
           {project.caseStudy.toolsUsed.map((tool, index) => (
-            <Text key={index}>{tool}</Text>
+            <Text key={index} border="1.5px solid" p={1} rounded="md" mt="2">
+              {tool}
+            </Text>
           ))}
         </Box>
-      </GridItem>
+      </Box>
 
-      <GridItem colSpan={2} columns={{ base: 1, md: 2 }} gap={4}>
+      <Box columns={{ base: 1, md: 2 }} gap={4}>
         {project.caseStudy.images.map((img, index) => (
-          <Image key={index} src={img} alt={project.name} my={4} />
+          <Image key={index} src={img} alt={project.name} py={2} />
         ))}
-      </GridItem>
-    </Grid>
+      </Box>
+    </Box>
   );
 };
 
