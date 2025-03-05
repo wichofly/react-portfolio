@@ -17,12 +17,12 @@ const CaseStudy = () => {
     <>
       <SimpleGrid columns={{ base: 1, md: 2 }} gap={6} mt="4">
         <Box>
-          <Heading mb="4" size="2xl">
+          <Heading mb="4" size="2xl" textDecoration="underline">
             {project.caseStudy.title}
           </Heading>
           <Text fontSize="xl">{project.caseStudy.overview}</Text>
 
-          <Heading size="lg" mt={6}>
+          <Heading size="lg" mt={6} textDecoration="underline">
             Key Features:
           </Heading>
           <Box display="flex" gap="4" flexWrap="wrap">
@@ -39,7 +39,7 @@ const CaseStudy = () => {
             ))}
           </Box>
 
-          <Heading size="lg" mt={6}>
+          <Heading size="lg" mt={6} textDecoration="underline">
             Technologies Used:
           </Heading>
           <Box display="flex" gap="4" flexWrap="wrap">

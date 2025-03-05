@@ -45,3 +45,12 @@ export const videoGameImages = [
   videGame5,
   videGame6,
 ];
+
+import vet1 from '@/assets/img/vet/vet1.png';
+import vet2 from '@/assets/img/vet/vet2.png';
+import vet3 from '@/assets/img/vet/vet3.png';
+import vet4 from '@/assets/img/vet/vet4.png';
+import vet5 from '@/assets/img/vet/vet5.png';
+import vet6 from '@/assets/img/vet/vet6.png';
+
+export const vetImages = [vet1, vet2, vet3, vet4, vet5, vet6];

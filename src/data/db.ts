@@ -1,6 +1,11 @@
 import { Project } from '@/interface/interface';
 
-import { projectImages, myFlixImages, videoGameImages } from '@/assets/img';
+import {
+  projectImages,
+  myFlixImages,
+  videoGameImages,
+  vetImages,
+} from '@/assets/img';
 
 export const projects: Project[] = [
   {
@@ -107,9 +112,33 @@ export const projects: Project[] = [
     description:
       'A veterinary patient management system built with React, featuring full CRUD operations. Users can add, edit, view, and delete patient records in an intuitive interface. The app incorporates local storage for persistent data and offers a smooth user experience for veterinary clinics or pet owners.',
     github: 'https://github.com/wichofly/veterinaryPatients-app',
-    deploy: 'https://crypto-app-flax-ten.vercel.app/',
+    deploy: 'https://veterinary-patients-app.vercel.app/',
     iconImages: ['React', 'Typescript', 'TailwindCss', 'Vercel'],
     showCaseStudy: true,
+    caseStudy: {
+      title: 'Veterinary Patients Case Study',
+      overview:
+        'The Veterinary Patients App is a patient management system designed for veterinarians and pet caretakers. It allows users to add, edit, view, and delete patient records while ensuring data persistence and seamless user interactions. Built with React, Zustand, and Tailwind CSS, this app delivers an intuitive and efficient way to manage veterinary patient information. Zustand was used instead of Redux or Context API for simplified state management, with the Persist middleware ensuring patient data is stored in local storage to prevent loss on refresh, while the devtools middleware aids in debugging the application state. React-Toastify is used to display toast messages, notifying users of successes, errors, and performed actions. For example, when a patient is added successfully, a toast appears with the message "Patient Added."',
+      features: [
+        'Patient Management ',
+        'Patient List',
+        'Form Validation',
+        'Persistent State',
+        'Real-time Notifications',
+        'Modern UI',
+      ],
+      toolsUsed: [
+        'React',
+        'TypeScript',
+        'Tailwind CSS',
+        'react-hook-form',
+        'react-toastify',
+        'Zustand ',
+        'UUID',
+        'Vercel ',
+      ],
+      images: vetImages,
+    },
   },
   {
     id: '6',
