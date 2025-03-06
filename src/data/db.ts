@@ -45,6 +45,25 @@ export const projects: Project[] = [
       title: 'My Flix Case Study',
       overview:
         'myFlix is a full-stack web application built using the MERN stack (MongoDB, Express.js, React, Node.js). It provides users with a seamless way to explore movies, view details about directors and genres, manage their profiles, and curate a list of their favorite movies. The app features a secure authentication system, a responsive UI, and a RESTful API backend for managing movie and user data. The backend was built using Node.js and Express to create a RESTful API that supports CRUD operations (Create, Read, Update, Delete). And The frontend was designed using React and React-Redux to create a single-page application (SPA) with smooth user interactions.',
+      process: [
+        {
+          title: 'Backend (Server-Side Development)',
+          steps: [
+            'MongoDB was used as the database to store movie and user data, while Mongoose handled database interactions.',
+            'Authentication & Security: Implemented JWT authentication to secure user data.',
+            'API Documentation: Postman was used for endpoint testing and validation.',
+          ],
+        },
+        {
+          title: 'Frontend (Client-Side Development)',
+          steps: [
+            'React-Router enabled navigation between different views, including movie details and user profiles.',
+            'Main View: Displays a grid of movies.',
+            'Movie Details View: Provides movie descriptions, director details, and genre overviews.',
+            'User Profile View: Allows users to update their information and manage favorites.',
+          ],
+        },
+      ],
       features: [
         'User Authentication',
         'Favorite Movies List',
@@ -84,6 +103,31 @@ export const projects: Project[] = [
       title: 'Video Games Case Study',
       overview:
         'VideoGames-App is a web application designed to help users discover new and old video games. It allows users to search, filter, and sort games based on various criteria such as platform, genre, and popularity. The application integrates with the RAWG API to provide real-time game data and features a modern, responsive UI with both dark and light mode options. The project was created to combine a passion for gaming with front-end development while improving TypeScript proficiency. It focuses on state management, performance optimization, and API integration to deliver a smooth user experience.',
+      process: [
+        {
+          title: 'API Integration & Data Fetching',
+          steps: [
+            'The application fetches game data from the RAWG API using Axios.',
+            'React Query optimizes API calls, caches responses, and supports pagination with useInfiniteQuery.',
+            'Dynamic filters enable users to sort games by genre, platform, or rating.',
+          ],
+        },
+        {
+          title: 'Frontend Development & UI Design',
+          steps: [
+            'Built with React & TypeScript for type safety and maintainability.',
+            'Chakra UI ensures a clean and accessible interface.',
+            'Infinite scrolling was integrated using react-infinite-scroll-component for seamless navigation.',
+          ],
+        },
+        {
+          title: 'State Management',
+          steps: [
+            'Zustand was used as a lightweight alternative to Redux for managing global state.',
+            'Filters, themes, and user preferences are efficiently handled without unnecessary re-renders.',
+          ],
+        },
+      ],
       features: [
         'Game Discovery',
         'Dynamic Filtering & Sorting',
