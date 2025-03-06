@@ -119,7 +119,32 @@ export const projects: Project[] = [
     caseStudy: {
       title: 'Veterinary Patients Case Study',
       overview:
-        'The Veterinary Patients App is a patient management system designed for veterinarians and pet caretakers. It allows users to add, edit, view, and delete patient records while ensuring data persistence and seamless user interactions. Built with React, Zustand, and Tailwind CSS, this app delivers an intuitive and efficient way to manage veterinary patient information. Zustand was used instead of Redux or Context API for simplified state management, with the Persist middleware ensuring patient data is stored in local storage to prevent loss on refresh, while the devtools middleware aids in debugging the application state. React-Toastify is used to display toast messages, notifying users of successes, errors, and performed actions. For example, when a patient is added successfully, a toast appears with the message "Patient Added."',
+        'The Veterinary Patients App is a patient management system designed for veterinarians and pet caretakers. It allows users to add, edit, view, and delete patient records while ensuring data persistence and seamless user interactions. Built with React, Zustand, and Tailwind CSS, this app delivers an intuitive and efficient way to manage veterinary patient information.',
+      process: [
+        {
+          title: 'State Management with Zustand',
+          steps: [
+            'Zustand was used instead of Redux or Context API for simplified state management.',
+            'Persist Middleware ensures that patient data is stored in local storage, preventing loss on refresh.',
+            'The devtools middleware helps in debugging the application state.',
+          ],
+        },
+        {
+          title: 'Form Handling with react-hook-form',
+          steps: [
+            'Used register() to handle form inputs efficiently.',
+            'Implemented real-time validation to guide users when entering data.',
+            'Reduced unnecessary re-renders, improving form performance.',
+          ],
+        },
+        {
+          title: 'Notifications with react-toastify',
+          steps: [
+            'Toast messages notify users of success, errors, and actions performed.',
+            'Example: When a patient is added successfully, a toast appears with "Patient Added" message.',
+          ],
+        },
+      ],
       features: [
         'Patient Management ',
         'Patient List',
@@ -154,7 +179,31 @@ export const projects: Project[] = [
     caseStudy: {
       title: 'Crypto Currency Case Study',
       overview:
-        'The Cryptocurrency App is a React-based web application that allows users to fetch real-time cryptocurrency quotations by selecting a fiat currency and a cryptocurrency. It integrates the CryptoCompare API to display live price updates, high/low trading values, and percentage changes. The app ensures a smooth and error-free experience by leveraging Zustand for state management, react-hook-form for form handling, and Zod for data validation. Axios is used for making API requests with built-in error handling to manage failures, while React Query (as an optional upgrade) can enhance caching and optimize data fetching. Zustand efficiently manages user selections and API responses, reducing unnecessary re-renders, and Persist Middleware can be added to retain selected currency data across sessions. React Hook Form improves form performance by minimizing re-renders, and Zod ensures valid API responses, preventing unexpected errors. This combination of technologies results in a high-performance, user-friendly, and resilient cryptocurrency tracking application.',
+        'The Cryptocurrency App is a React-based web application that allows users to fetch real-time cryptocurrency quotations by selecting a fiat currency and a cryptocurrency. It integrates the CryptoCompare API to display live price updates, high/low trading values, and percentage changes. The app features Zustand for state management, react-hook-form for form validation, and Zod for data validation, ensuring a smooth, error-free experience.',
+      process: [
+        {
+          title: 'API Handling & Data Fetching',
+          steps: [
+            'Used Axios for making API requests.',
+            'Implemented error handling for API failures.',
+            'React Query (optional upgrade) can further optimize caching and data fetching.',
+          ],
+        },
+        {
+          title: 'State Management with Zustand',
+          steps: [
+            'Zustand manages user selections and API responses, ensuring minimal re-renders.',
+            'Persist Middleware can be added to retain selected currency data across sessions.',
+          ],
+        },
+        {
+          title: 'Form Handling & Validation',
+          steps: [
+            'Used react-hook-form to reduce re-renders and enhance form performance.',
+            'Zod ensures valid API responses and prevents unexpected errors.',
+          ],
+        },
+      ],
       features: [
         'Real-time Cryptocurrency Data',
         'Dynamic Coin Selection',

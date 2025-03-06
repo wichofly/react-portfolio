@@ -23,6 +23,24 @@ const CaseStudy = () => {
           <Text fontSize="xl">{project.caseStudy.overview}</Text>
 
           <Heading size="lg" mt={6} textDecoration="underline">
+            Development Process
+          </Heading>
+          <SimpleGrid gap="2" mt="4">
+            {project.caseStudy.process?.map((step, index) => (
+              <>
+                <Box key={index}>
+                  <Heading size="md">{step.title}</Heading>
+                </Box>
+                <Box as="ul" listStyleType="circle" ml={4}>
+                  {step.steps.map((detail, idx) => (
+                    <li key={idx}>{detail}</li>
+                  ))}
+                </Box>
+              </>
+            ))}
+          </SimpleGrid>
+
+          <Heading size="lg" mt={6} textDecoration="underline">
             Key Features:
           </Heading>
           <Box display="flex" gap="4" flexWrap="wrap">
