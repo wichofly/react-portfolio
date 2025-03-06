@@ -75,7 +75,7 @@ const CaseStudy = () => {
           </Box>
         </Box>
 
-        <Box columns={{ base: 1, md: 2 }}>
+        <Box columns={{ base: 1, lg: 2 }}>
           {project.caseStudy.images.map((img, index) => (
             <Image key={index} src={img} alt={project.name} py={2} />
           ))}
