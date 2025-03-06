@@ -5,6 +5,7 @@ import {
   myFlixImages,
   videoGameImages,
   vetImages,
+  cryptoImages,
 } from '@/assets/img';
 
 export const projects: Project[] = [
@@ -150,5 +151,31 @@ export const projects: Project[] = [
     deploy: 'https://crypto-app-flax-ten.vercel.app/',
     iconImages: ['React', 'Typescript', 'Css', 'Zod', 'Vercel'],
     showCaseStudy: true,
+    caseStudy: {
+      title: 'Crypto Currency Case Study',
+      overview:
+        'The Cryptocurrency App is a React-based web application that allows users to fetch real-time cryptocurrency quotations by selecting a fiat currency and a cryptocurrency. It integrates the CryptoCompare API to display live price updates, high/low trading values, and percentage changes. The app ensures a smooth and error-free experience by leveraging Zustand for state management, react-hook-form for form handling, and Zod for data validation. Axios is used for making API requests with built-in error handling to manage failures, while React Query (as an optional upgrade) can enhance caching and optimize data fetching. Zustand efficiently manages user selections and API responses, reducing unnecessary re-renders, and Persist Middleware can be added to retain selected currency data across sessions. React Hook Form improves form performance by minimizing re-renders, and Zod ensures valid API responses, preventing unexpected errors. This combination of technologies results in a high-performance, user-friendly, and resilient cryptocurrency tracking application.',
+      features: [
+        'Real-time Cryptocurrency Data',
+        'Dynamic Coin Selection',
+        'Form Handling & Validation',
+        'Error Handling & API Reliability',
+        'State Management with Zustand',
+        'Simple Loading Spinner',
+      ],
+      toolsUsed: [
+        'React',
+        'TypeScript',
+        'CSS',
+        'Axios',
+        'react-hook-form',
+        'react-toastify',
+        'Zustand',
+        'Zod',
+        'CryptoCompare API',
+        'Vercel ',
+      ],
+      images: cryptoImages,
+    },
   },
 ];

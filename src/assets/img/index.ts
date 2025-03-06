@@ -54,3 +54,19 @@ import vet5 from '@/assets/img/vet/vet5.png';
 import vet6 from '@/assets/img/vet/vet6.png';
 
 export const vetImages = [vet1, vet2, vet3, vet4, vet5, vet6];
+
+import crypto1 from '@/assets/img/crypto/crypt1.png';
+import crypto2 from '@/assets/img/crypto/crypt2.png';
+import crypto3 from '@/assets/img/crypto/crypt3.png';
+import crypto4 from '@/assets/img/crypto/crypt4.png';
+import crypto5 from '@/assets/img/crypto/crypt5.png';
+import crypto6 from '@/assets/img/crypto/crypt6.png';
+
+export const cryptoImages = [
+  crypto1,
+  crypto2,
+  crypto3,
+  crypto4,
+  crypto5,
+  crypto6,
+];
