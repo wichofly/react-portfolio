@@ -1,8 +1,34 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Box, Flex } from '@chakra-ui/react';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import Home from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import CaseStudy from './pages/CaseStudy';
+
+import { useColorModeValue } from './components/ui/color-mode';
+
 function App() {
+  const color = useColorModeValue('gray.800', 'gray.400');
+
   return (
-    <>
-      <h1>Hello World</h1>
-    </>
+    <Flex minH="100vh" display="flex" flexDirection="column">
+      <Router>
+        <Navbar />
+        <Box flex="1" color={color} p="4">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/case-study/:id" element={<CaseStudy />} />
+          </Routes>
+        </Box>
+        <Footer />
+      </Router>
+    </Flex>
   );
 }
 
