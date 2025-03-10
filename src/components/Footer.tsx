@@ -26,7 +26,7 @@ const Footer = () => {
         fontSize="xl"
       >
         <Text as="b">Copyrights &copy; {footerYears} All Rights Reserved</Text>
-        <Box textAlign="center">
+        <Box textAlign="center" mt={{ base: '4', md: '0' }}>
           <Text as="b">Find me on</Text>
           <HStack my="2">
             <LinkButton
@@ -34,7 +34,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/mauricio-erazo-/"
               target="_blank"
             >
-              <Icon fontSize="3xl">
+              <Icon fontSize={{ base: '2xl', md: '3xl' }}>
                 <FaLinkedin />
               </Icon>
             </LinkButton>
@@ -44,13 +44,13 @@ const Footer = () => {
               href="https://github.com/wichofly/"
               target="_blank"
             >
-              <Icon fontSize="3xl">
+              <Icon fontSize={{ base: '2xl', md: '3xl' }}>
                 <FaGithub />
               </Icon>
             </LinkButton>
 
             <LinkButton variant="ghost" href="/">
-              <Icon fontSize="3xl">
+              <Icon fontSize={{ base: '2xl', md: '3xl' }}>
                 <FaLaptop />
               </Icon>
             </LinkButton>
