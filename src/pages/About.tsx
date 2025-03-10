@@ -1,5 +1,5 @@
 import { enjoyList, techSkills } from '@/data/skills';
-import { Box, Heading, Icon, SimpleGrid, Tag, Text } from '@chakra-ui/react';
+import { Box, Heading, SimpleGrid, Tag, Text } from '@chakra-ui/react';
 
 const About = () => {
   return (
