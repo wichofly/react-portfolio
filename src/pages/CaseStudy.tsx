@@ -69,7 +69,7 @@ const CaseStudy = () => {
                 variant="subtle"
                 mt="2"
               >
-                {tool}
+                <Tag.Label>{tool}</Tag.Label>
               </Tag.Root>
             ))}
           </Box>
