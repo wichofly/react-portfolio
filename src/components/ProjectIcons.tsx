@@ -21,6 +21,7 @@ import {
   SiPostman,
   SiReactquery,
   SiRedux,
+  SiRender,
   SiTypescript,
   SiZod,
 } from 'react-icons/si';
@@ -35,6 +36,7 @@ const iconMap: { [key: string]: IconType } = {
   MongoDB: SiMongodb,
   DataBase: FaDatabase,
   Postman: SiPostman,
+  Render: SiRender,
   React: FaReact,
   ReactBootstrap: FaBootstrap,
   Redux: SiRedux,

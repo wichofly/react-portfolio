@@ -28,7 +28,7 @@ export const projects: Project[] = [
       'A RESTful API developed with Node.js, Express, and MongoDB to manage movie and user data. This backend service allows users to register, log in, and manage their movie favorites. It interacts with a non-relational MongoDB database via Mongoose, ensuring efficient data retrieval and security. Designed for scalability, the API includes full CRUD operations and authentication features.',
     github: 'https://github.com/wichofly/movie-api',
     deploy: 'https://wichoflix.onrender.com/documentation',
-    iconImages: ['NodeJS', 'HTTP', 'Express', 'MongoDB', 'DataBase', 'Postman'],
+    iconImages: ['NodeJS', 'HTTP', 'Express', 'MongoDB', 'DataBase', 'Postman', 'Render'],
     showCaseStudy: false,
   },
   {

@@ -31,6 +31,9 @@ export const techSkills = [
   'React Bootstrap',
   'Chakra UI',
   'Tailwind CSS',
+  'Netlify',
+  'Vercel',
+  'Render'
 ];
 
 export const enjoyList: { element: IconType; label: string }[] = [
