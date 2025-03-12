@@ -18,7 +18,7 @@ const Contact = () => {
           href="mailto:antonierazo13@gmail.com"
           colorPalette="teal"
           fontSize="8xl"
-          _hover={{ color: 'teal.600' }}
+          _hover={{ color: 'teal.600', scale: '1.1' }}
           transition="0.3s ease-in-out"
         >
           <BsEnvelopeAt />
