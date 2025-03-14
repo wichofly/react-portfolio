@@ -1,50 +1,33 @@
-# React + TypeScript + Vite
+# Mauricio's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal developer portfolio, built to showcase my skills, projects, and experience as a web developer.
+It serves as both a professional profile and a portfolio of projects, allowing visitors to explore my work, technologies I use, and ways to contact me.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Homepage** – Introduction & professional overview
+- **About Me** – My background, skills, and learning journey
+- **Projects** – Showcasing real-world projects with live demos
+- **Case Studies** – In-depth details about selected projects
+- **Contact Form** – Direct messaging using EmailJS
+- **Dark/Light Mode** – Seamless theme switching
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React: A powerful library for building dynamic user interfaces.
+- TypeScript: Used for type safety and improved code quality.
+- [Chakra UI](https://chakra-ui.com/): A component library for building accessible and responsive UIs.
+- Modular Data Structure: Projects, case studies, and skills are stored in separate files for better maintainability.
+- React Hook Form – Simplifies form management & validation.
+- [EmailJS](https://www.emailjs.com/docs/tutorial/overview/): Send emails directly from the frontend.
+- React Router: Enables smooth navigation across pages
 
-- Configure the top-level `parserOptions` property like this:
+## Deploy in Vercel
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+[Mauricio's Portfolio]()
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Contact Me
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+If you’d like to connect, collaborate, or have any questions, feel free to reach out!
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+[LinkedIn](https://www.linkedin.com/in/mauricio-erazo-/)
