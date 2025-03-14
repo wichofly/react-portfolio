@@ -1,5 +1,4 @@
-import { LinkButton } from '@/components/ui/link-button';
-import { Box, HStack, Show, Text, Image } from '@chakra-ui/react';
+import { Box, Button, HStack, Image, Link, Show, Text } from '@chakra-ui/react';
 
 import coffee from '../assets/coffee.png';
 
@@ -25,13 +24,17 @@ const Home = () => {
       </Text>
 
       <HStack gap="4" my="6" flexDirection={{ base: 'column', md: 'row' }}>
-        <LinkButton colorPalette="teal" variant="outline" href="/projects">
-          View Projects
-        </LinkButton>
+        <Link href="/projects">
+          <Button colorPalette="teal" variant="outline">
+            View Projects
+          </Button>
+        </Link>
 
-        <LinkButton colorPalette="teal" variant="ghost" href="/contact">
-          Contact Me
-        </LinkButton>
+        <Link href="/contact">
+          <Button colorPalette="teal" variant="ghost">
+            Contact Me
+          </Button>
+        </Link>
       </HStack>
 
       <Show when="md">
