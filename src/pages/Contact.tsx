@@ -118,7 +118,8 @@ const Contact = () => {
 
           <Button
             type="submit"
-            colorScheme="teal"
+            colorPalette='teal'
+            variant='subtle'
             loading={isSubmitting}
             width="full"
           >
