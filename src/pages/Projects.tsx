@@ -1,7 +1,15 @@
 import ProjectIcons from '@/components/ProjectIcons';
-import { LinkButton } from '@/components/ui/link-button';
 import { projects } from '@/data/db';
-import { Box, Card, Heading, Image, SimpleGrid, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Card,
+  Heading,
+  Image,
+  SimpleGrid,
+  Text,
+} from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
   return (
@@ -34,30 +42,22 @@ const Projects = () => {
               <ProjectIcons iconImages={project.iconImages} />
             </Card.Body>
             <Card.Footer justifyContent="center" gap="2">
-              <LinkButton
-                variant="subtle"
-                colorPalette="teal"
-                href={project.github}
-                target="_blank"
-              >
-                Github
-              </LinkButton>
-              <LinkButton
-                variant="ghost"
-                colorPalette="teal"
-                href={project.deploy}
-                target="_blank"
-              >
-                Deploy
-              </LinkButton>
+              <Link to={project.github} target="_blank">
+                <Button variant="subtle" colorPalette="teal">
+                  Github
+                </Button>
+              </Link>
+              <Link to={project.deploy} target="_blank">
+                <Button variant="ghost" colorPalette="teal">
+                  Deploy
+                </Button>
+              </Link>
               {project.showCaseStudy && (
-                <LinkButton
-                  href={`/case-study/${project.id}`}
-                  variant="outline"
-                  colorPalette="teal"
-                >
-                  Case Study
-                </LinkButton>
+                <Link to={`/case-study/${project.id}`}>
+                  <Button variant="outline" colorPalette="teal">
+                    Case Study
+                  </Button>
+                </Link>
               )}
             </Card.Footer>
           </Card.Root>
