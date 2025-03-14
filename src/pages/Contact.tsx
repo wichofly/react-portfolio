@@ -16,7 +16,7 @@ import { useForm } from 'react-hook-form';
 
 const Contact = () => {
   const borderColor = useColorModeValue('gray.200', 'gray.900');
-  const bgColor = useColorModeValue('gray.50', 'gray.950');
+  const bgColor = useColorModeValue('gray.50', 'gray.900');
 
   const {
     register,

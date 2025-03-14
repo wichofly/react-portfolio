@@ -13,9 +13,10 @@ import { Toaster } from './components/ui/toaster';
 
 function App() {
   const color = useColorModeValue('gray.800', 'gray.400');
+  const bgColor = useColorModeValue('gray.50', 'gray.950');
 
   return (
-    <Flex minH="100vh" display="flex" flexDirection="column">
+    <Flex minH="100vh" display="flex" flexDirection="column" p="4" bg={bgColor}>
       <Router>
         <Navbar />
         <Box flex="1" color={color} p="4">
