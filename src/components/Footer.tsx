@@ -34,7 +34,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/mauricio-erazo-/"
               target="_blank"
             >
-              <Icon fontSize={{ base: '2xl', md: '3xl' }}>
+              <Icon size={{ base: 'lg', md: 'xl' }}>
                 <FaLinkedin />
               </Icon>
             </LinkButton>
@@ -44,13 +44,13 @@ const Footer = () => {
               href="https://github.com/wichofly/"
               target="_blank"
             >
-              <Icon fontSize={{ base: '2xl', md: '3xl' }}>
+              <Icon size={{ base: 'lg', md: 'xl' }}>
                 <FaGithub />
               </Icon>
             </LinkButton>
 
             <LinkButton variant="ghost" href="/">
-              <Icon fontSize={{ base: '2xl', md: '3xl' }}>
+              <Icon size={{ base: 'lg', md: 'xl' }}>
                 <FaLaptop />
               </Icon>
             </LinkButton>
