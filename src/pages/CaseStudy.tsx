@@ -1,6 +1,14 @@
-import { LinkButton } from '@/components/ui/link-button';
 import { projects } from '@/data/db';
-import { Box, Heading, Image, SimpleGrid, Tag, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Heading,
+  Image,
+  Link,
+  SimpleGrid,
+  Tag,
+  Text,
+} from '@chakra-ui/react';
 import { useParams } from 'react-router-dom';
 
 const CaseStudy = () => {
@@ -84,28 +92,23 @@ const CaseStudy = () => {
 
       <Box display="flex" mt="10" justifyContent="space-between">
         <Box>
-          <LinkButton
-            variant="outline"
-            colorPalette="teal"
-            href={project.github}
-            target="_blank"
-            mr="2"
-          >
-            Github
-          </LinkButton>
-          <LinkButton
-            variant="ghost"
-            colorPalette="teal"
-            href={project.deploy}
-            target="_blank"
-          >
-            Live Demo
-          </LinkButton>
+          <Link href={project.github} target="_blank" mr="2">
+            <Button colorPalette="teal" variant="outline">
+              Github
+            </Button>
+          </Link>
+          <Link href={project.deploy} target="_blank">
+            <Button colorPalette="teal" variant="ghost">
+              Live Demo
+            </Button>
+          </Link>
         </Box>
 
-        <LinkButton href="/projects" variant="outline" colorPalette="teal">
-          <Text>Go Back</Text>
-        </LinkButton>
+        <Link href="/projects">
+          <Button variant="subtle" colorPalette="teal">
+            Go Back
+          </Button>
+        </Link>
       </Box>
     </>
   );
