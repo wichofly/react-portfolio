@@ -15,7 +15,7 @@ import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
 
 const Contact = () => {
-  const borderColor = useColorModeValue('gray.200', 'gray.600');
+  const borderColor = useColorModeValue('gray.200', 'gray.900');
   const bgColor = useColorModeValue('gray.50', 'gray.950');
 
   const {
