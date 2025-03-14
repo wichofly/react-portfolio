@@ -4,12 +4,11 @@ import {
   Button,
   Heading,
   Image,
-  Link,
   SimpleGrid,
   Tag,
   Text,
 } from '@chakra-ui/react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const CaseStudy = () => {
   const { id } = useParams(); // Get the project ID from the database
@@ -92,19 +91,19 @@ const CaseStudy = () => {
 
       <Box display="flex" mt="10" justifyContent="space-between">
         <Box>
-          <Link href={project.github} target="_blank" mr="2">
-            <Button colorPalette="teal" variant="outline">
+          <Link to={project.github} target="_blank">
+            <Button colorPalette="teal" variant="outline" mr="2">
               Github
             </Button>
           </Link>
-          <Link href={project.deploy} target="_blank">
+          <Link to={project.deploy} target="_blank">
             <Button colorPalette="teal" variant="ghost">
               Live Demo
             </Button>
           </Link>
         </Box>
 
-        <Link href="/projects">
+        <Link to="/projects">
           <Button variant="subtle" colorPalette="teal">
             Go Back
           </Button>
