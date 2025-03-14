@@ -41,7 +41,7 @@ const Footer = () => {
 
             <LinkButton
               variant="ghost"
-              href="https://github.com/wichofly/"
+              href="https://github.com/wichofly/react-portfolio"
               target="_blank"
             >
               <Icon size={{ base: 'lg', md: 'xl' }}>
