@@ -1,4 +1,5 @@
-import { Box, Button, HStack, Image, Link, Show, Text } from '@chakra-ui/react';
+import { Box, Button, HStack, Image, Show, Text } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
 import coffee from '../assets/coffee.png';
 
@@ -24,13 +25,13 @@ const Home = () => {
       </Text>
 
       <HStack gap="4" my="6" flexDirection={{ base: 'column', md: 'row' }}>
-        <Link href="/projects">
+        <Link to="/projects">
           <Button colorPalette="teal" variant="outline">
             View Projects
           </Button>
         </Link>
 
-        <Link href="/contact">
+        <Link to="/contact">
           <Button colorPalette="teal" variant="ghost">
             Contact Me
           </Button>
