@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import CaseStudy from './pages/CaseStudy';
 
 import { useColorModeValue } from './components/ui/color-mode';
+import { Toaster } from './components/ui/toaster';
 
 function App() {
   const color = useColorModeValue('gray.800', 'gray.400');
@@ -18,6 +19,7 @@ function App() {
       <Router>
         <Navbar />
         <Box flex="1" color={color} p="4">
+          <Toaster />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -33,3 +35,7 @@ function App() {
 }
 
 export default App;
+
+//
+//
+//

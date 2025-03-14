@@ -23,3 +23,9 @@ export interface Project {
   showCaseStudy: boolean;
   caseStudy?: CaseStudy;
 }
+
+export interface ContactFormData {
+  name: string;
+  email: string;
+  message: string;
+}
