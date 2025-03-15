@@ -15,7 +15,7 @@ export const projects: Project[] = [
     image: projectImages.pokemonImg,
     description:
       'A dynamic web application built with HTML, CSS, and JavaScript that fetches data from an external API. Users can browse the first 151 Pokémon, and clicking on a name opens a modal displaying the Pokémon’s image, type, height, weight, and abilities. The app utilizes API calls to provide real-time information and enhances user interaction with a sleek, responsive design.',
-    github: 'https://github.com/wichofly/cryptoMoney-app',
+    github: 'https://github.com/wichofly/Pokemon-App',
     deploy: 'https://wichofly.github.io/Pokemon-App/',
     iconImages: ['Html', 'Css', 'JS'],
     showCaseStudy: false,
@@ -26,7 +26,7 @@ export const projects: Project[] = [
     image: projectImages.movieAPI,
     description:
       'A RESTful API developed with Node.js, Express, and MongoDB to manage movie and user data. This backend service allows users to register, log in, and manage their movie favorites. It interacts with a non-relational MongoDB database via Mongoose, ensuring efficient data retrieval and security. Designed for scalability, the API includes full CRUD operations and authentication features.',
-    github: 'https://github.com/wichofly/Pokemon-App',
+    github: 'https://github.com/wichofly/movie-api',
     deploy: 'https://wichoflix.onrender.com/documentation',
     iconImages: [
       'NodeJS',
