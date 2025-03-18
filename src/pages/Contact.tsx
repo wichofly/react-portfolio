@@ -27,9 +27,9 @@ const Contact = () => {
 
   const onSubmit = async (data: ContactFormData) => {
     try {
-      const serviceID = 'service_07g4rbo';
-      const templateID = 'template_4sousrs';
-      const publicKey = 'M0apN-3Xr6_0OU6_m';
+      const serviceID = import.meta.env.VITE_SERVICE_ID;
+      const templateID = import.meta.env.VITE_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_PUBLIC_KEY;
 
       const emailParams = {
         name: data.name,
