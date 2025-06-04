@@ -225,7 +225,7 @@ export const projects: Project[] = [
     description:
       'A cryptocurrency price tracker built with React and the CoinDesk API. This app provides real-time price updates based on user-selected cryptocurrencies. It features a clean UI, interactive charts, and a responsive design, making it an ideal tool for crypto enthusiasts to stay updated with market trends.',
     github: 'https://github.com/wichofly/cryptoMoney-app',
-    deploy: 'https://crypto-app-flax-ten.vercel.app/',
+    deploy: 'https://crypto-money-five.vercel.app/',
     iconImages: ['React', 'Typescript', 'Css', 'Zod', 'Vercel'],
     showCaseStudy: true,
     caseStudy: {
