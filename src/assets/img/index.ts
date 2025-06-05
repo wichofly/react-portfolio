@@ -4,6 +4,7 @@ import myFlix from '@/assets/img/myFlix.png';
 import videoGames from '@/assets/img/videoGames.png';
 import crypto from '@/assets/img/cryptoCurrency.png';
 import vet from '@/assets/img/verterinary.png';
+import recipes from '@/assets/img/drinkRecipes.png';
 
 export const projectImages = {
   pokemonImg,
@@ -12,6 +13,7 @@ export const projectImages = {
   videoGames,
   crypto,
   vet,
+  recipes,
 };
 
 import myFlix1 from '@/assets/img/myFlix/myFlix1.png';
@@ -69,4 +71,20 @@ export const cryptoImages = [
   crypto4,
   crypto5,
   crypto6,
+];
+
+import recipe1 from '@/assets/img/recipes/pic1.png';
+import recipe2 from '@/assets/img/recipes/pic2.png';
+import recipe3 from '@/assets/img/recipes/pic3.png';
+import recipe4 from '@/assets/img/recipes/pic4.png';
+import recipe5 from '@/assets/img/recipes/pic5.png';
+import recipe6 from '@/assets/img/recipes/pic6.png';
+
+export const recipeImages = [
+  recipe1,
+  recipe2,
+  recipe3,
+  recipe4,
+  recipe5,
+  recipe6,
 ];

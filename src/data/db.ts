@@ -6,6 +6,7 @@ import {
   videoGameImages,
   vetImages,
   cryptoImages,
+  recipeImages,
 } from '@/assets/img';
 
 export const projects: Project[] = [
@@ -277,6 +278,73 @@ export const projects: Project[] = [
         'Vercel ',
       ],
       images: cryptoImages,
+    },
+  },
+  {
+    id: '7',
+    name: 'Drink Recipes - Generate with AI',
+    image: projectImages.recipes,
+    description:
+      'An interactive and elegant web app that allows users to browse drink recipes by category or ingredients and generate personalized cocktail ideas using AI — combining TheCocktailDB API with OpenRouter’s AI capabilities.',
+    github: 'https://github.com/wichofly/drinks-and-recipes-app',
+    deploy: 'https://drink-recipes-five.vercel.app/',
+    iconImages: [
+      'React',
+      'Typescript',
+      'TailwindCss',
+      'ReactRouter',
+      'Zod',
+      'Vercel',
+    ],
+    showCaseStudy: true,
+    caseStudy: {
+      title: 'Drink Recipes - Generate with AI Case Study',
+      overview:
+        'A React + TypeScript application designed to explore and generate drink recipes. It integrates with TheCocktailDB API for drink data and uses OpenRouter with the Vercel AI SDK for personalized AI-powered recipe suggestions. The UI is clean and responsive, optimized with lazy-loaded routes and animated modals. ',
+      process: [
+        {
+          title: 'AI Integration & Data Handling',
+          steps: [
+            'Fetched data via Axios from CocktailDB API.',
+            'Used Zod for runtime validation of API responses.',
+            'Streamed AI-generated recipes using Vercel AI SDK + OpenRouter.',
+            'Managed favorites state using Zustand with persistent storage.',
+          ],
+        },
+        {
+          title: 'Frontend Architecture',
+          steps: [
+            'TailwindCSS and Headless UI were used for responsive, accessible UI components.',
+            'React Router and Suspense enabled lazy-loading of key routes.',
+            'React Markdown rendered AI-generated content beautifully with prose styling.',
+          ],
+        },
+      ],
+      features: [
+        'Explore drinks by category and ingredients',
+        'Animated modal for drink details',
+        'Favorites management with Zustand + localStorage',
+        'AI-powered drink recipe generator based on user input',
+        'Lazy-loaded routes for performance optimization',
+        'Markdown rendering of AI results',
+        'Toast notifications for user feedback',
+      ],
+      toolsUsed: [
+        'React',
+        'TypeScript',
+        'TailwindCSS',
+        'Axios',
+        'Zod',
+        'Zustand',
+        'CocktailDB API',
+        'OpenRouter API',
+        'Vercel AI SDK',
+        'React Markdown',
+        'Headless UI',
+        'Heroicons',
+        'Vercel',
+      ],
+      images: recipeImages,
     },
   },
 ];

@@ -33,7 +33,7 @@ export const techSkills = [
   'Tailwind CSS',
   'Netlify',
   'Vercel',
-  'Render'
+  'Render',
 ];
 
 export const enjoyList: { element: IconType; label: string }[] = [
