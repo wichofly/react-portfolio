@@ -24,6 +24,7 @@ import {
   SiRender,
   SiTypescript,
   SiZod,
+  SiReactrouter,
 } from 'react-icons/si';
 
 const iconMap: { [key: string]: IconType } = {
@@ -47,6 +48,7 @@ const iconMap: { [key: string]: IconType } = {
   Vercel: IoLogoVercel,
   Zod: SiZod,
   TailwindCss: RiTailwindCssFill,
+  ReactRouter: SiReactrouter,
 };
 
 interface ProjectIconsProps {
