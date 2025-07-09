@@ -26,6 +26,7 @@ import {
   SiZod,
   SiReactrouter,
 } from 'react-icons/si';
+import { GiArtificialIntelligence } from 'react-icons/gi';
 
 const iconMap: { [key: string]: IconType } = {
   Html: FaHtml5,
@@ -49,6 +50,7 @@ const iconMap: { [key: string]: IconType } = {
   Zod: SiZod,
   TailwindCss: RiTailwindCssFill,
   ReactRouter: SiReactrouter,
+  AI: GiArtificialIntelligence,
 };
 
 interface ProjectIconsProps {

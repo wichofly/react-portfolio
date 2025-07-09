@@ -28,6 +28,8 @@ export const techSkills = [
   'GIT',
   'Github',
   'Responsive Design',
+  'OpenRouter',
+  'Vercel AI SDK',
   'React Bootstrap',
   'Chakra UI',
   'Tailwind CSS',

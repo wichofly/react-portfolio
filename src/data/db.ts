@@ -293,6 +293,7 @@ export const projects: Project[] = [
       'Typescript',
       'TailwindCss',
       'ReactRouter',
+      'AI',
       'Zod',
       'Vercel',
     ],
