@@ -1,4 +1,5 @@
 import { HStack, Text } from '@chakra-ui/react';
+import { Tooltip } from '@/components/ui/tooltip';
 import { IconType } from 'react-icons';
 
 import {
@@ -60,9 +61,16 @@ interface ProjectIconsProps {
 const ProjectIcons = ({ iconImages }: ProjectIconsProps) => {
   return (
     <HStack mt={4} justifyContent="center" color="teal.500">
-      {iconImages.map((index) => (
-        <Text key={index} as={iconMap[index]} boxSize="6" />
-      ))}
+      {iconImages.map((iconName) => {
+        const iconImage = iconMap[iconName];
+        return (
+          iconImage && (
+            <Tooltip key={iconName} content={iconName}  contentProps={{ css: { "--tooltip-bg": "teal" } }} showArrow>
+              <Text as={iconImage} boxSize="6" />
+            </Tooltip>
+          )
+        );
+      })}
     </HStack>
   );
 };
