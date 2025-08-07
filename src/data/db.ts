@@ -287,7 +287,7 @@ export const projects: Project[] = [
     description:
       'An interactive and elegant web app that allows users to browse drink recipes by category or ingredients and generate personalized cocktail ideas using AI — combining TheCocktailDB API with OpenRouter’s AI capabilities.',
     github: 'https://github.com/wichofly/drinks-and-recipes-app',
-    deploy: 'https://drink-recipes-five.vercel.app/',
+    deploy: 'https://drinksrecipes-ai.vercel.app/',
     iconImages: [
       'React',
       'Typescript',
