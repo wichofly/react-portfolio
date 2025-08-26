@@ -26,6 +26,7 @@ import {
   SiTypescript,
   SiZod,
   SiReactrouter,
+  SiJsonwebtokens 
 } from 'react-icons/si';
 import { GiArtificialIntelligence } from 'react-icons/gi';
 
@@ -38,6 +39,7 @@ const iconMap: { [key: string]: IconType } = {
   Express: SiExpress,
   MongoDB: SiMongodb,
   DataBase: FaDatabase,
+  JWT: SiJsonwebtokens,
   Postman: SiPostman,
   Render: SiRender,
   React: FaReact,
@@ -65,7 +67,12 @@ const ProjectIcons = ({ iconImages }: ProjectIconsProps) => {
         const iconImage = iconMap[iconName];
         return (
           iconImage && (
-            <Tooltip key={iconName} content={iconName}  contentProps={{ css: { "--tooltip-bg": "teal" } }} showArrow>
+            <Tooltip
+              key={iconName}
+              content={iconName}
+              contentProps={{ css: { '--tooltip-bg': 'teal' } }}
+              showArrow
+            >
               <Text as={iconImage} boxSize="6" />
             </Tooltip>
           )
