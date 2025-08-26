@@ -26,9 +26,12 @@ import {
   SiTypescript,
   SiZod,
   SiReactrouter,
-  SiJsonwebtokens 
+  SiJsonwebtokens,
+  SiSequelize,
+  SiDbeaver 
 } from 'react-icons/si';
 import { GiArtificialIntelligence } from 'react-icons/gi';
+import { BiLogoPostgresql } from 'react-icons/bi';
 
 const iconMap: { [key: string]: IconType } = {
   Html: FaHtml5,
@@ -38,9 +41,12 @@ const iconMap: { [key: string]: IconType } = {
   NodeJS: FaNodeJs,
   Express: SiExpress,
   MongoDB: SiMongodb,
+  PostgreSQL: BiLogoPostgresql,
   DataBase: FaDatabase,
+  Sequelize: SiSequelize,
   JWT: SiJsonwebtokens,
   Postman: SiPostman,
+  DBeaver: SiDbeaver,
   Render: SiRender,
   React: FaReact,
   ReactBootstrap: FaBootstrap,
