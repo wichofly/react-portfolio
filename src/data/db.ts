@@ -7,6 +7,7 @@ import {
   vetImages,
   cryptoImages,
   recipeImages,
+  productImages,
 } from '@/assets/img';
 
 export const projects: Project[] = [
@@ -30,11 +31,11 @@ export const projects: Project[] = [
     github: 'https://github.com/wichofly/movie-api',
     deploy: 'https://wichoflix.onrender.com/documentation',
     iconImages: [
+      'MongoDB',
+      'Express',
       'NodeJS',
       'HTTP',
-      'Express',
-      'MongoDB',
-      'DataBase',
+      'JWT',
       'Postman',
       'Render',
     ],
@@ -346,6 +347,80 @@ export const projects: Project[] = [
         'Vercel',
       ],
       images: recipeImages,
+    },
+  },
+  {
+    id: '8',
+    name: 'Products Management (PERN Stack)',
+    image: projectImages.products, // Add this asset to your projectImages collection
+    description:
+      'Full-stack product management system built with the PERN stack. Offers robust API with validation, and a modern React frontend with inline editing, routing actions, and schema validation using Valibot.',
+    github: 'https://github.com/wichofly/client-product',
+    deploy: 'https://client-product-six.vercel.app/',
+    iconImages: [
+      'PostgreSQL',
+      'Express',
+      'Sequelize',
+      'DBeaver',
+      'React',
+      'Typescript',
+      'ReactRouter',
+      'TailwindCss',
+      'Vercel',
+    ],
+    showCaseStudy: true,
+    caseStudy: {
+      title: 'Products Management – PERN Stack Case Study',
+      overview:
+        'A full-stack web app for managing products using PostgreSQL, Express (with TypeScript), and a React frontend. Features CRUD operations, dynamic routing, inline field editing, data validation with Valibot, and seamless integration between client and server.',
+      process: [
+        {
+          title: 'Backend – RESTful API with TypeScript & Express',
+          steps: [
+            'Built with Node.js, Express, and TypeScript, using Sequelize + sequelize-typescript for ORM modeling.',
+            'Implemented request validation via express-validator and error handling middleware (`handleInputErrors`).',
+            'Automated test suite using Jest and Supertest to ensure endpoint reliability.',
+            'API documentation provided through Swagger UI for easy endpoint exploration.',
+          ],
+        },
+        {
+          title: 'Frontend – React with React Router & Valibot',
+          steps: [
+            'Implemented nested routes with React Router’s data APIs: loaders for fetching and actions for mutations.',
+            'Enabled inline editing and optimistic UI updates using `useFetcher` for PATCH/PUT operations.',
+            'Used Valibot for runtime validation of form and fetched data for safety and consistency.',
+            'Styled components using Tailwind CSS for a clean and responsive UI.',
+          ],
+        },
+      ],
+      features: [
+        'RESTful API with Swagger documentation',
+        'CRUD operations with validation',
+        'Inline editing via React Router Actions',
+        'Runtime schema validation with Valibot',
+        'Automated testing of backend API',
+        'Responsive design using TailwindCSS',
+      ],
+      toolsUsed: [
+        'React',
+        'TypeScript',
+        'Express',
+        'PostgreSQL',
+        'Sequelize',
+        'sequelize-typescript',
+        'express-validator',
+        'Jest',
+        'Supertest',
+        'Swagger UI',
+        'React Router',
+        'Valibot',
+        'Tailwind CSS',
+        'Axios',
+        'Postman',
+        'Vercel',
+        'Render',
+      ],
+      images: productImages, 
     },
   },
 ];

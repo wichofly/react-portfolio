@@ -26,8 +26,12 @@ import {
   SiTypescript,
   SiZod,
   SiReactrouter,
+  SiJsonwebtokens,
+  SiSequelize,
+  SiDbeaver 
 } from 'react-icons/si';
 import { GiArtificialIntelligence } from 'react-icons/gi';
+import { BiLogoPostgresql } from 'react-icons/bi';
 
 const iconMap: { [key: string]: IconType } = {
   Html: FaHtml5,
@@ -37,8 +41,12 @@ const iconMap: { [key: string]: IconType } = {
   NodeJS: FaNodeJs,
   Express: SiExpress,
   MongoDB: SiMongodb,
+  PostgreSQL: BiLogoPostgresql,
   DataBase: FaDatabase,
+  Sequelize: SiSequelize,
+  JWT: SiJsonwebtokens,
   Postman: SiPostman,
+  DBeaver: SiDbeaver,
   Render: SiRender,
   React: FaReact,
   ReactBootstrap: FaBootstrap,
@@ -65,7 +73,12 @@ const ProjectIcons = ({ iconImages }: ProjectIconsProps) => {
         const iconImage = iconMap[iconName];
         return (
           iconImage && (
-            <Tooltip key={iconName} content={iconName}  contentProps={{ css: { "--tooltip-bg": "teal" } }} showArrow>
+            <Tooltip
+              key={iconName}
+              content={iconName}
+              contentProps={{ css: { '--tooltip-bg': 'teal' } }}
+              showArrow
+            >
               <Text as={iconImage} boxSize="6" />
             </Tooltip>
           )
