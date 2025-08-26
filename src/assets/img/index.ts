@@ -91,12 +91,12 @@ export const recipeImages = [
   recipe6,
 ];
 
-import product1 from '@/assets/img/products/product1.png';
-import product2 from '@/assets/img/products/product1.png';
-import product3 from '@/assets/img/products/product1.png';
-import product4 from '@/assets/img/products/product1.png';
-import product5 from '@/assets/img/products/product1.png';
-import product6 from '@/assets/img/products/product1.png';
+import product1 from '@/assets/img/products/products1.png';
+import product2 from '@/assets/img/products/products2.png';
+import product3 from '@/assets/img/products/products3.png';
+import product4 from '@/assets/img/products/products4.png';
+import product5 from '@/assets/img/products/products5.png';
+import product6 from '@/assets/img/products/products6.png';
 
 export const productImages = [
   product1,
