@@ -356,7 +356,7 @@ export const projects: Project[] = [
     description:
       'Full-stack product management system built with the PERN stack. Offers robust API with validation, and a modern React frontend with inline editing, routing actions, and schema validation using Valibot.',
     github: 'https://github.com/wichofly/client-product',
-    deploy: 'https://client-product-six.vercel.app/',
+    deploy: 'https://client-product-six.vercel.app/login',
     iconImages: [
       'PostgreSQL',
       'Express',
