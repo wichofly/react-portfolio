@@ -6,6 +6,7 @@ import crypto from '@/assets/img/cryptoCurrency.png';
 import vet from '@/assets/img/verterinary.png';
 import recipes from '@/assets/img/drinkRecipes.png';
 import products from '@/assets/img/products.png';
+import upTask from '@/assets/img/upTask.png';
 
 export const projectImages = {
   pokemonImg,
@@ -16,6 +17,7 @@ export const projectImages = {
   vet,
   recipes,
   products,
+  upTask,
 };
 
 import myFlix1 from '@/assets/img/myFlix/myFlix1.png';
@@ -105,4 +107,20 @@ export const productImages = [
   product4,
   product5,
   product6,
+];
+
+import upTask1 from '@/assets/img/upTask/upTask1.png';
+import upTask2 from '@/assets/img/upTask/upTask2.png';
+import upTask3 from '@/assets/img/upTask/upTask3.png';
+import upTask4 from '@/assets/img/upTask/upTask4.png';
+import upTask5 from '@/assets/img/upTask/upTask5.png';
+import upTask6 from '@/assets/img/upTask/upTask6.png';
+
+export const upTaskImages = [
+  upTask1,
+  upTask2,
+  upTask3,
+  upTask4,
+  upTask5,
+  upTask6,
 ];
